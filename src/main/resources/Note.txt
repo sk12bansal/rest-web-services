@@ -1,0 +1,60 @@
+Richardson Maturity Model
+
+Level 0
+Expose soap web services in rest style
+
+http://server/getposts
+http://server/deleteposts
+http://server/doThis
+
+Level 1
+Expose resources with proper uri
+
+http://server/accounts
+http://server/accounts/10
+Note: improper use of http methods
+
+level 2
+Level1 + HTTP Methods
+
+Level 3
+Level 2 + HATEOAS
+Data + Next Possible Actions
+
+
+Best Restful Design Practices
+
+1. Consumer First
+2. have great document for rest api
+3. make best use of HTTP
+
+4. request methods
+
+GET
+PUT
+POST
+DELETE
+5. Response Status
+
+200 - SUCCESS
+404 - Resource Not found
+400 - BAD Request
+201 - created
+401 - Unauthorized
+500 - server error
+
+6. No secure info in uri
+7. use plurals
+8. use nouns for resources
+9. for exceptions
+define a consistent approach
+
+/search
+put /gists/{id}/star
+delete /gists/{id}/star
+
+
+
+
+
+
